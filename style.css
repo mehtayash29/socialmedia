@@ -1,0 +1,294 @@
+body
+{
+  font-family: "Inter" !important;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  position: absolute;
+  left: 87%;
+  top: 20%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#tital
+{
+  padding: 3rem 5rem 10rem;
+  margin: 0 5rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0  0 2rem 2rem;
+}
+hr
+{
+  display: none;
+}
+.dark
+{
+  position: absolute;
+  left: 62%;
+  top: 20%;
+}
+#tital p
+{
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+#tital h1
+{
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#midle
+{
+  margin:0 10rem;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  top: 20%;
+
+}
+#box1
+{
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 10px;
+  height: 17rem;
+  margin: 0 15px;
+  padding-top: 3rem;
+}
+.top1
+{
+  background-color: hsl(208, 92%, 53%);
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius:10px 10px 0 0;
+}
+.top2
+{
+  background-color: hsl(203, 89%, 53%);
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius:10px 10px 0 0;
+}
+.top3
+{
+  background-image: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius:10px 10px 0 0;
+}
+.top4
+{
+  background-color:  hsl(348, 97%, 39%);
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius:10px 10px 0 0;
+}
+#midle h1
+{
+  font-size: 70px;
+  font-weight: 700;
+}
+.followers
+{
+  color: hsl(228, 12%, 44%);
+  font-size: 15px;
+}
+.id
+{
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+.up
+{
+  font-weight: 700;
+  color: hsl(163, 72%, 41%);
+  font-size: 16px;
+}
+.down
+{
+  font-weight: 700;
+  color: hsl(356, 69%, 56%);
+  font-size: 16px;
+}
+
+.overview
+{
+  position: absolute;
+  top: 65%;
+  left: 11%;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  font-size: 32px;
+}
+.bottom
+{
+  margin:0 10rem;
+  position: absolute;
+  top: 75%;
+  width: 80%;
+}
+#box2
+{
+  background-color: hsl(227, 47%, 96%);
+  margin:15px 15px;
+  border-radius: 10px;
+}
+.icon
+{
+  position: absolute;
+  left: 85%;
+  top: 20%;
+}
+.info
+{
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  top: 2rem;
+  padding-left: 1rem;
+}
+.bottom h2
+{
+  font-weight: 700;
+  position: relative;
+  top: 2rem;
+  font-size: 35px;
+  padding-left: 1rem;
+}
+.bottom .up
+{
+  position: relative;
+  left: 78%;
+  top: -5%;
+}
+.bottom .down
+{
+  position: relative;
+  left: 82%;
+  top: -5%;
+}
+.attribution
+{
+  position: absolute;
+  top: 120%;
+  left: 40%;
+}
+
+#box1:hover
+{
+  background-color:hsl(227, 47%, 92%);
+}
+#box2:hover
+{
+  background-color:hsl(227, 47%, 92%);
+}
+@media(max-width:1000px){
+
+  #tital
+  {
+    margin: 0 ;
+    padding: 3rem 2rem 10rem;
+  }
+  .dark
+  {
+    position: absolute;
+    left: 4%;
+    bottom: 20%;
+  }
+  #tital h1
+  {
+    font-size: 35px;
+  }
+  hr
+  {
+    display:block;
+    background: #ccc;
+  }
+
+  #midle
+  {
+    margin:5rem 3rem 0;
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+
+  }
+  #box1
+  {
+    margin:15px 0;
+  }
+    .overview
+  {
+    position: absolute;
+    top: 200%;
+  }
+  .bottom
+  {
+    margin:0 3rem;
+    position: absolute;
+    top: 207%;
+  }
+  .attribution
+  {
+    position: absolute;
+    top: 380%;
+    left: 25%;
+  }
+}
